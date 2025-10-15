@@ -940,3 +940,67 @@ flex: 0 0 100%;
 }
 
 
+/* ===== Equipment Section ===== */
+.equipment {
+  background: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.equipment h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.equipment p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.equipment .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+.equipment .box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.equipment .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.equipment .box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.equipment .box p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 15px 20px;
+}
+
+.equipment .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
