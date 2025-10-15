@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Fitness Club</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    body {
+      background: #232323;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .signup-container {
+      background: #fff;
+      padding: 40px 30px 30px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      width: 370px;
+      text-align: center;
+      position: relative;
+      animation: slideFadeIn 1s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    @keyframes slideFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .signup-container h2 {
+      margin-bottom: 25px;
+      color: #C11325;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: fadeInText 1.2s 0.2s both;
+    }
+    @keyframes fadeInText {
+      from { opacity: 0; letter-spacing: 10px; }
+      to { opacity: 1; letter-spacing: 1px; }
+    }
+    .signup-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeInForm 1.2s 0.4s both;
+    }
+    @keyframes fadeInForm {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .signup-container input {
+      padding: 12px;
+      border: 1px solid #C11325;
+      background: #232323;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border 0.3s, background 0.3s;
+    }
+    .signup-container input:focus {
+      border: 1.5px solid #C11325;
+      background: #18191a;
+      outline: none;
+    }
+    .signup-container button {
+      padding: 12px;
+      background: #C11325;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 2px 8px rgba(193,19,37,0.15);
+    }
+    .signup-container button:hover {
+      background: #a0101f;
+      transform: scale(1.04);
+    }
+    .signup-container .divider {
+      margin: 18px 0 10px 0;
+      border-top: 1px solid #eee;
+      animation: fadeInDivider 1.2s 0.7s both;
+    }
+    @keyframes fadeInDivider {
+      from { opacity: 0; width: 0; }
+      to { opacity: 1; width: 100%; }
+    }
+    .signup-container .links {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      animation: fadeInLinks 1.2s 0.8s both;
+    }
+    @keyframes fadeInLinks {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .signup-container .links a {
+      color: #232323;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+    .signup-container .links a.login-link {
+      color: #C11325;
+      font-weight: 500;
+    }
+    .signup-container .links a:hover {
+      color: #a0101f;
+      text-decoration: underline;
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.12;
+      z-index: 0;
+      animation: floatCircle 8s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .circle.red {
+      background: #C11325;
+      width: 180px;
+      height: 180px;
+      left: -80px;
+      top: -60px;
+      animation-delay: 0s;
+    }
+    .circle.black {
+      background: #232323;
+      width: 120px;
+      height: 120px;
+      right: -50px;
+      bottom: -40px;
+      animation-delay: 2s;
+    }
+    @keyframes floatCircle {
+      from { transform: translateY(0);}
+      to { transform: translateY(30px);}
+    }
+  </style>
+</head>
+<body>
+  <div class="circle red"></div>
+  <div class="circle black"></div>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="divider"></div>
+    <div class="links">
+      <a href="login.html" class="login-link">Already have an account? Login</a>
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
