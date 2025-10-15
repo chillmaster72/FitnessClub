@@ -204,39 +204,139 @@
     </section>
     <!-- End Service -->
 
-    <!--equipment section-->
-    <section class="equipment" id="equipment">
-      <div class="container">
-        <h2>Our Equipment</h2>
-        <p>
-          Our gym offers a wide range of cardio, strength, and functional
-          training equipment to help you achieve your fitness goals.
-        </p>
-        <div class="content">
-          <!-- Equipment items go here -->
-          <div class="box">
-            <img src="images/treadmill.jpg" alt="Treadmill" />
-            <h4>Treadmill</h4>
-            <p>High-quality treadmill for running and walking.</p>
-          </div>
-          <div class="box">
-            <img src="images/dumbbell.jpg" alt="Dumbbells" />
-            <h4>Dumbbells</h4>
-            <p>Various weights for strength training exercises.</p>
-          </div>
-          <div class="box">
-            <img src="images/rowing-machine.jpg" alt="Rowing Machine" />
-            <h4>Rowing Machine</h4>
-            <p>Full-body workout with low impact on joints.</p>
-          </div>
-          <div class="box">
-            <img src="images/elliptical.jpg" alt="Elliptical Trainer" />
-            <h4>Elliptical Trainer</h4>
-            <p>Low-impact cardio machine suitable for all levels.</p>
-          </div>
+   <!--equipment section-->
+<section class="equipment" id="equipment">
+<!-- Equipment Section -->
+<section class="equipment" id="equipment">
+  <div class="container">
+    <h2 class="section-title">Our Equipment</h2>
+    <p class="section-subtitle">
+      High-quality gym equipment for your fitness journey.
+    </p>
+    <div class="equipment-grid">
+      <!-- Equipment Item -->
+      <div class="equipment-card">
+        <img src="images/treadmill.jpg" alt="Treadmill" class="equipment-img" />
+        <h4>Treadmill</h4>
+        <p>High-quality treadmill for running and walking.</p>
+        <p><strong>Price: $500</strong></p>
+        <div class="qty-container">
+          <button class="qty-btn minus">-</button>
+          <input type="number" min="1" value="1" class="qty-input" />
+          <button class="qty-btn plus">+</button>
         </div>
+        <button class="buy-btn" data-name="Treadmill" data-price="500">
+          Buy Now
+        </button>
       </div>
-    </section>
+
+      <div class="equipment-card">
+        <img src="images/dumbbell.jpg" alt="Dumbbells" class="equipment-img" />
+        <h4>Dumbbells</h4>
+        <p>Various weights for strength training exercises.</p>
+        <p><strong>Price: $100</strong></p>
+        <div class="qty-container">
+          <button class="qty-btn minus">-</button>
+          <input type="number" min="1" value="1" class="qty-input" />
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="buy-btn" data-name="Dumbbells" data-price="100">
+          Buy Now
+        </button>
+      </div>
+
+      <div class="equipment-card">
+        <img src="images/rowing-machine.jpg" alt="Rowing Machine" class="equipment-img" />
+        <h4>Rowing Machine</h4>
+        <p>Full-body workout with low impact on joints.</p>
+        <p><strong>Price: $300</strong></p>
+        <div class="qty-container">
+          <button class="qty-btn minus">-</button>
+          <input type="number" min="1" value="1" class="qty-input" />
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="buy-btn" data-name="Rowing Machine" data-price="300">
+          Buy Now
+        </button>
+      </div>
+
+      <div class="equipment-card">
+        <img src="images/elliptical.jpg" alt="Elliptical Trainer" class="equipment-img" />
+        <h4>Elliptical Trainer</h4>
+        <p>Low-impact cardio machine suitable for all levels.</p>
+        <p><strong>Price: $400</strong></p>
+        <div class="qty-container">
+          <button class="qty-btn minus">-</button>
+          <input type="number" min="1" value="1" class="qty-input" />
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="buy-btn" data-name="Elliptical Trainer" data-price="400">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  // Quantity plus/minus buttons
+  document.querySelectorAll(".equipment-card").forEach(card => {
+    const minusBtn = card.querySelector(".qty-btn.minus");
+    const plusBtn = card.querySelector(".qty-btn.plus");
+    const qtyInput = card.querySelector(".qty-input");
+
+    minusBtn.addEventListener("click", () => {
+      let val = parseInt(qtyInput.value);
+      if (val > 1) qtyInput.value = val - 1;
+    });
+
+    plusBtn.addEventListener("click", () => {
+      let val = parseInt(qtyInput.value);
+      qtyInput.value = val + 1;
+    });
+  });
+</script>
+
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+  const stripe = Stripe("{{STRIPE_PUBLISHABLE_KEY}}"); // your publishable key
+
+ document.querySelectorAll(".buy-btn").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    const name = btn.dataset.name;
+    const price = parseFloat(btn.dataset.price);
+
+    // Read current quantity from the input field inside the same card
+    const card = btn.closest(".equipment-card");
+    const qtyInput = card.querySelector(".qty-input");
+    const val = parseInt(qtyInput.value) || 1; // this is your 'val'
+    const amount = Math.round(price * val * 100); // multiply price by val
+
+    try {
+      const res = await fetch("http://localhost:3000/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, amount }),
+      });
+
+      const data = await res.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Failed to create Stripe session");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong");
+    }
+  });
+});
+
+</script>
+
 
     <!--end of equipment section-->
 
