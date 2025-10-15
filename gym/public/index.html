@@ -602,5 +602,37 @@
       });
       wow.init();
     </script>
+
+    <!-- AI Chatbot Button -->
+    <button
+      id="ai-chat-btn"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1000;
+      "
+    >
+      🤖
+    </button>
+
+    <script>
+      const aiButton = document.getElementById("ai-chat-btn");
+      aiButton.addEventListener("click", () => {
+        window.open(
+          "ai.html",
+          "Gym AI Chat",
+          "width=600,height=600,resizable=yes"
+        );
+      });
+    </script>
   </body>
 </html>
