@@ -9,6 +9,67 @@
       .wow:first-child {
         visibility: hidden;
       }
+
+
+      /* Reviews Section */
+.reviews {
+  padding: 80px 0;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+.reviews .title-p {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+.reviews .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.reviews .box {
+  width: 300px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.reviews .box:hover {
+  transform: translateY(-8px);
+}
+.reviews .inner {
+  padding: 20px;
+}
+.reviews .img img {
+  width: 100%;
+  border-bottom: 3px solid #f00;
+}
+.reviews .text h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #f00;
+}
+.reviews .stars {
+  margin: 10px 0;
+  color: gold;
+}
+
+/* Map */
+.map {
+  padding: 60px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+.map iframe {
+  width: 90%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #333;
+}
+
     </style>
   </head>
   <body>
@@ -580,6 +641,60 @@
       </div>
     </section>
     <!-- End Price -->
+
+
+    <!-- Reviews -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="wow fadeInUp">What Our Members Say</h2>
+    <p class="title-p">Real experiences from people who transformed their lives with us.</p>
+    <div class="content">
+      <div class="box wow bounceInUp">
+        <div class="inner">
+          <div class="img"><img src="images/review1.jpg" alt="review1"></div>
+          <div class="text">
+            <h4>John Carter</h4>
+            <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+            <p>Joining this gym was the best decision! Trainers are motivating and sessions are great.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box wow bounceInUp" data-wow-delay="0.2s">
+        <div class="inner">
+          <div class="img"><img src="images/review2.jpg" alt="review2"></div>
+          <div class="text">
+            <h4>Emily Smith</h4>
+            <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+            <p>I love the group classes and how friendly everyone is!</p>
+          </div>
+        </div>
+      </div>
+      <div class="box wow bounceInUp" data-wow-delay="0.4s">
+        <div class="inner">
+          <div class="img"><img src="images/review3.jpg" alt="review3"></div>
+          <div class="text">
+            <h4>Michael Lee</h4>
+            <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+            <p>Modern equipment and great ambiance. I feel healthier every day!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="map" id="map">
+  <h2 class="wow fadeInUp">Find Us in Mumbai</h2>
+  <p class="title-p">Visit our fitness club conveniently located in the heart of Mumbai.</p>
+  <iframe
+    src="https://www.google.com/maps?q=Mumbai%20Gym&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+
 
     <!-- Start Contact -->
     <section class="contact" id="contact">
