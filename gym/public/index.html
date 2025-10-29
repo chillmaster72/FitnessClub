@@ -1,405 +1,398 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gym Website Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <style>
-      .wow:first-child {
-        visibility: hidden;
-      }
+
+<head>
+  <title>Gym Website Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
 
 
-      /* Reviews Section */
-.reviews {
-  padding: 80px 0;
-  background: #111;
-  color: #fff;
-  text-align: center;
-}
-.reviews .title-p {
-  margin-bottom: 40px;
-  color: #ccc;
-}
-.reviews .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-.reviews .box {
-  width: 300px;
-  background: #222;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.reviews .box:hover {
-  transform: translateY(-8px);
-}
-.reviews .inner {
-  padding: 20px;
-}
-.reviews .img img {
-  width: 100%;
-  border-bottom: 3px solid #f00;
-}
-.reviews .text h4 {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #f00;
-}
-.reviews .stars {
-  margin: 10px 0;
-  color: gold;
-}
+    /* Reviews Section */
+    .reviews {
+      padding: 80px 0;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
 
-/* Map */
-.map {
-  padding: 60px 0;
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
-.map iframe {
-  width: 90%;
-  height: 400px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #333;
-}
+    .reviews .title-p {
+      margin-bottom: 40px;
+      color: #ccc;
+    }
 
-    </style>
-  </head>
-  <body>
-    <!-- Start Header  -->
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="">Fitness <span>Club</span></a>
-        </div>
-        <a href="javascript:void(0)" class="ham-burger">
-          <span></span>
-          <span></span>
-        </a>
-        <div class="nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#price">Price</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+    .reviews .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .reviews .box {
+      width: 300px;
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .reviews .box:hover {
+      transform: translateY(-8px);
+    }
+
+    .reviews .inner {
+      padding: 20px;
+    }
+
+    .reviews .img img {
+      width: 100%;
+      border-bottom: 3px solid #f00;
+    }
+
+    .reviews .text h4 {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #f00;
+    }
+
+    .reviews .stars {
+      margin: 10px 0;
+      color: gold;
+    }
+
+    /* Map */
+    .map {
+      padding: 60px 0;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    .map iframe {
+      width: 90%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #333;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Header  -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="">Fitness <span>Club</span></a>
       </div>
-    </header>
-    <!-- End Header  -->
-
-    <!-- Start Home -->
-    <section class="home wow flash" id="home">
-      <div class="container">
-        <h1 class="wow slideInLeft" data-wow-delay="1s">
-          It's <span>gym</span> time. Let's go
-        </h1>
-        <h1 class="wow slideInRight" data-wow-delay="1s">
-          We are ready to <span>fit you</span>
-        </h1>
-      </div>
-      <!-- go down -->
-      <a href="#about" class="go-down">
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      <a href="javascript:void(0)" class="ham-burger">
+        <span></span>
+        <span></span>
       </a>
-      <!-- go down -->
-    </section>
-    <!-- End Home -->
-
-    <!-- Start About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="content">
-          <div class="box wow bounceInUp">
-            <div class="inner">
-              <div class="img">
-                <img src="images/about1.jpg" alt="about" />
-              </div>
-              <div class="text">
-                <h4>Free Consultation</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="box wow bounceInUp" data-wow-delay="0.2s">
-            <div class="inner">
-              <div class="img">
-                <img src="images/about2.jpg" alt="about" />
-              </div>
-              <div class="text">
-                <h4>Best Training</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="box wow bounceInUp" data-wow-delay="0.4s">
-            <div class="inner">
-              <div class="img">
-                <img src="images/about3.jpg" alt="about" />
-              </div>
-              <div class="text">
-                <h4>Build Perfect Body</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About -->
-
-    <!-- Start Service -->
-    <section class="service" id="service">
-      <div class="container">
-        <div class="content">
-          <div class="text box wow slideInLeft">
-            <h2>Services</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries
-            </p>
-            <a href="" class="btn">Start Now</a>
-          </div>
-          <div class="accordian box wow slideInRight">
-            <div class="accordian-container active">
-              <div class="head">
-                <h4>Cardiovascular Equipment</h4>
-                <span class="fa fa-angle-down"></span>
-              </div>
-              <div class="body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-            <div class="accordian-container">
-              <div class="head">
-                <h4>Strength Training Equipment</h4>
-                <span class="fa fa-angle-up"></span>
-              </div>
-              <div class="body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-            <div class="accordian-container">
-              <div class="head">
-                <h4>Group Fitness Class</h4>
-                <span class="fa fa-angle-up"></span>
-              </div>
-              <div class="body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-            <div class="accordian-container">
-              <div class="head">
-                <h4>Other Services</h4>
-                <span class="fa fa-angle-up"></span>
-              </div>
-              <div class="body">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Service -->
-
-   <!--equipment section-->
-<section class="equipment" id="equipment">
-<!-- Equipment Section -->
-<section class="equipment" id="equipment">
-  <div class="container">
-    <h2 class="section-title">Our Equipment</h2>
-    <p class="section-subtitle">
-      High-quality gym equipment for your fitness journey.
-    </p>
-    <div class="equipment-grid">
-      <!-- Equipment Item -->
-      <div class="equipment-card">
-        <img src="images/treadmill.jpg" alt="Treadmill" class="equipment-img" />
-        <h4>Treadmill</h4>
-        <p>High-quality treadmill for running and walking.</p>
-        <p><strong>Price: $500</strong></p>
-        <div class="qty-container">
-          <button class="qty-btn minus">-</button>
-          <input type="number" min="1" value="1" class="qty-input" />
-          <button class="qty-btn plus">+</button>
-        </div>
-        <button class="buy-btn" data-name="Treadmill" data-price="500">
-          Buy Now
-        </button>
-      </div>
-
-      <div class="equipment-card">
-        <img src="images/dumbbell.jpg" alt="Dumbbells" class="equipment-img" />
-        <h4>Dumbbells</h4>
-        <p>Various weights for strength training exercises.</p>
-        <p><strong>Price: $100</strong></p>
-        <div class="qty-container">
-          <button class="qty-btn minus">-</button>
-          <input type="number" min="1" value="1" class="qty-input" />
-          <button class="qty-btn plus">+</button>
-        </div>
-        <button class="buy-btn" data-name="Dumbbells" data-price="100">
-          Buy Now
-        </button>
-      </div>
-
-      <div class="equipment-card">
-        <img src="images/rowing-machine.jpg" alt="Rowing Machine" class="equipment-img" />
-        <h4>Rowing Machine</h4>
-        <p>Full-body workout with low impact on joints.</p>
-        <p><strong>Price: $300</strong></p>
-        <div class="qty-container">
-          <button class="qty-btn minus">-</button>
-          <input type="number" min="1" value="1" class="qty-input" />
-          <button class="qty-btn plus">+</button>
-        </div>
-        <button class="buy-btn" data-name="Rowing Machine" data-price="300">
-          Buy Now
-        </button>
-      </div>
-
-      <div class="equipment-card">
-        <img src="images/elliptical.jpg" alt="Elliptical Trainer" class="equipment-img" />
-        <h4>Elliptical Trainer</h4>
-        <p>Low-impact cardio machine suitable for all levels.</p>
-        <p><strong>Price: $400</strong></p>
-        <div class="qty-container">
-          <button class="qty-btn minus">-</button>
-          <input type="number" min="1" value="1" class="qty-input" />
-          <button class="qty-btn plus">+</button>
-        </div>
-        <button class="buy-btn" data-name="Elliptical Trainer" data-price="400">
-          Buy Now
-        </button>
+      <div class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </header>
+  <!-- End Header  -->
+
+  <!-- Start Home -->
+  <section class="home wow flash" id="home">
+    <div class="container">
+      <h1 class="wow slideInLeft" data-wow-delay="1s">
+        It's <span>gym</span> time. Let's go
+      </h1>
+      <h1 class="wow slideInRight" data-wow-delay="1s">
+        We are ready to <span>fit you</span>
+      </h1>
+    </div>
+    <!-- go down -->
+    <a href="#about" class="go-down">
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+    <!-- go down -->
+  </section>
+  <!-- End Home -->
+
+  <!-- Start About -->
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="content">
+        <div class="box wow bounceInUp">
+          <div class="inner">
+            <div class="img">
+              <img src="images/about1.jpg" alt="about" />
+            </div>
+            <div class="text">
+              <h4>Free Consultation</h4>
+              <p>
+                Get started on your fitness journey with a complimentary consultation from our expert trainers. We'll
+                assess your goals, discuss your preferences, and design a personalized plan to help you achieve your
+                best results quickly and safely.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box wow bounceInUp" data-wow-delay="0.2s">
+          <div class="inner">
+            <div class="img">
+              <img src="images/about2.jpg" alt="about" />
+            </div>
+            <div class="text">
+              <h4>Best Training</h4>
+              <p>
+                Train under certified professionals who utilize proven methods and the latest fitness science. Whether
+                you’re a beginner or an athlete, our trainers ensure safe technique, motivation, and progress every
+                session.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box wow bounceInUp" data-wow-delay="0.4s">
+          <div class="inner">
+            <div class="img">
+              <img src="images/about3.jpg" alt="about" />
+            </div>
+            <div class="text">
+              <h4>Build Perfect Body</h4>
+              <p>
+                Transform your physique with our holistic approach—combining strength training, cardio, and nutrition
+                advice. Our facilities and support ensure you develop strength, confidence, and long-term healthy habits
+                and start today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Start Service -->
+  <section class="service" id="service">
+    <div class="container">
+      <div class="content">
+        <div class="text box wow slideInLeft">
+          <h2>Services</h2>
+          <p>
+            At Fitness Club, we believe everyone deserves personalized support on their wellness journey. Our services
+            are designed to cater to all fitness levels:
+          </p>
+          <p>
+            – Expert Personal Training: Work one-on-one with certified trainers who create tailored workouts and provide
+            ongoing motivation.<br>
+            – Modern Facilities: State-of-the-art machines and clean, spacious studios enhance your workout
+            experience.<br>
+            – Flexible Memberships: Choose month-to-month or long-term packages with no time restrictions, unlimited
+            access, and premium amenities.<br>
+            – Supportive Environment: Join a community focused on fitness and well-being, where every member receives
+            encouragement and guidance.
+          </p>
+          <a href="" class="btn">Start Now</a>
+        </div>
+        <div class="accordian box wow slideInRight">
+          <div class="accordian-container active">
+            <div class="head">
+              <h4>Cardiovascular Equipment</h4>
+              <span class="fa fa-angle-down"></span>
+            </div>
+            <div class="body">
+              <p>
+                High-end treadmills, stationary bikes, rowing machines, and ellipticals help you improve heart health,
+                burn calories, and boost stamina in a comfortable setting.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-container">
+            <div class="head">
+              <h4>Strength Training Equipment</h4>
+              <span class="fa fa-angle-up"></span>
+            </div>
+            <div class="body">
+              <p>
+                Our strength zone features free weights, resistance machines, squat racks, benches, and more for toning,
+                muscle building, and athletic conditioning.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-container">
+            <div class="head">
+              <h4>Group Fitness Class</h4>
+              <span class="fa fa-angle-up"></span>
+            </div>
+            <div class="body">
+              <p>
+                Energizing group sessions including HIIT, yoga, Zumba, and spinning foster camaraderie and make workouts
+                more enjoyable for all ages and abilities.
+              </p>
+            </div>
+          </div>
+          <div class="accordian-container">
+            <div class="head">
+              <h4>Other Services</h4>
+              <span class="fa fa-angle-up"></span>
+            </div>
+            <div class="body">
+              <p>
+                Enjoy additional amenities such as nutritional coaching, personalized workout plans, locker rooms, and
+                free WiFi for added convenience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
 
 
-<script>
-  // Quantity plus/minus buttons
-  document.querySelectorAll(".equipment-card").forEach(card => {
-    const minusBtn = card.querySelector(".qty-btn.minus");
-    const plusBtn = card.querySelector(".qty-btn.plus");
-    const qtyInput = card.querySelector(".qty-input");
 
-    minusBtn.addEventListener("click", () => {
-      let val = parseInt(qtyInput.value);
-      if (val > 1) qtyInput.value = val - 1;
-    });
+    <!-- Equipment Section -->
+    <section class="equipment" id="equipment">
+      <div class="container">
+        <h2 class="section-title">Our Equipment</h2>
+        <p class="section-subtitle">
+          High-quality gym equipment for your fitness journey.
+        </p>
+        <div class="equipment-grid">
+          <!-- Equipment Item -->
+          <div class="equipment-card">
+            <img src="images/treadmill.jpg" alt="Treadmill" class="equipment-img" />
+            <h4>Treadmill</h4>
+            <p>High-quality treadmill for running and walking.</p>
+            <p><strong>Price: $500</strong></p>
+            <div class="qty-container">
+              <button class="qty-btn minus">-</button>
+              <input type="number" min="1" value="1" class="qty-input" />
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="buy-btn" data-name="Treadmill" data-price="500">
+              Buy Now
+            </button>
+          </div>
 
-    plusBtn.addEventListener("click", () => {
-      let val = parseInt(qtyInput.value);
-      qtyInput.value = val + 1;
-    });
-  });
-</script>
+          <div class="equipment-card">
+            <img src="images/dumbbell.jpg" alt="Dumbbells" class="equipment-img" />
+            <h4>Dumbbells</h4>
+            <p>Various weights for strength training exercises.</p>
+            <p><strong>Price: $100</strong></p>
+            <div class="qty-container">
+              <button class="qty-btn minus">-</button>
+              <input type="number" min="1" value="1" class="qty-input" />
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="buy-btn" data-name="Dumbbells" data-price="100">
+              Buy Now
+            </button>
+          </div>
+
+          <div class="equipment-card">
+            <img src="images/rowing-machine.jpg" alt="Rowing Machine" class="equipment-img" />
+            <h4>Rowing Machine</h4>
+            <p>Full-body workout with low impact on joints.</p>
+            <p><strong>Price: $300</strong></p>
+            <div class="qty-container">
+              <button class="qty-btn minus">-</button>
+              <input type="number" min="1" value="1" class="qty-input" />
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="buy-btn" data-name="Rowing Machine" data-price="300">
+              Buy Now
+            </button>
+          </div>
+
+          <div class="equipment-card">
+            <img src="images/elliptical.jpg" alt="Elliptical Trainer" class="equipment-img" />
+            <h4>Elliptical Trainer</h4>
+            <p>Low-impact cardio machine suitable for all levels.</p>
+            <p><strong>Price: $400</strong></p>
+            <div class="qty-container">
+              <button class="qty-btn minus">-</button>
+              <input type="number" min="1" value="1" class="qty-input" />
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="buy-btn" data-name="Elliptical Trainer" data-price="400">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-  const stripe = Stripe("{{STRIPE_PUBLISHABLE_KEY}}"); // your publishable key
+    <script>
+      // Quantity plus/minus buttons
+      document.querySelectorAll(".equipment-card").forEach(card => {
+        const minusBtn = card.querySelector(".qty-btn.minus");
+        const plusBtn = card.querySelector(".qty-btn.plus");
+        const qtyInput = card.querySelector(".qty-input");
 
- document.querySelectorAll(".buy-btn").forEach((btn) => {
-  btn.addEventListener("click", async () => {
-    const name = btn.dataset.name;
-    const price = parseFloat(btn.dataset.price);
+        minusBtn.addEventListener("click", () => {
+          let val = parseInt(qtyInput.value);
+          if (val > 1) qtyInput.value = val - 1;
+        });
 
-    // Read current quantity from the input field inside the same card
-    const card = btn.closest(".equipment-card");
-    const qtyInput = card.querySelector(".qty-input");
-    const val = parseInt(qtyInput.value) || 1; // this is your 'val'
-    const amount = Math.round(price * val * 100); // multiply price by val
+        plusBtn.addEventListener("click", () => {
+          let val = parseInt(qtyInput.value);
+          qtyInput.value = val + 1;
+        });
+      });
+    </script>
 
-    try {
-      const res = await fetch("http://localhost:3000/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, amount }),
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      const stripe = Stripe("{{STRIPE_PUBLISHABLE_KEY}}"); // your publishable key
+
+      document.querySelectorAll(".buy-btn").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const name = btn.dataset.name;
+          const price = parseFloat(btn.dataset.price);
+
+          // Read current quantity from the input field inside the same card
+          const card = btn.closest(".equipment-card");
+          const qtyInput = card.querySelector(".qty-input");
+          const val = parseInt(qtyInput.value) || 1; // this is your 'val'
+          const amount = Math.round(price * val * 100); // multiply price by val
+
+          try {
+            const res = await fetch("http://localhost:3000/create-checkout-session", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name, amount }),
+            });
+
+            const data = await res.json();
+
+            if (data.url) {
+              window.location.href = data.url;
+            } else {
+              alert("Failed to create Stripe session");
+            }
+          } catch (err) {
+            console.error(err);
+            alert("Something went wrong");
+          }
+        });
       });
 
-      const data = await res.json();
-
-      if (data.url) {
-        window.location.href = data.url;
-      } else {
-        alert("Failed to create Stripe session");
-      }
-    } catch (err) {
-      console.error(err);
-      alert("Something went wrong");
-    }
-  });
-});
-
-</script>
-
+    </script>
 
     <!--end of equipment section-->
+
 
     <!-- Start Classes -->
     <section class="classes" id="classes">
@@ -411,11 +404,9 @@
           <div class="box text wow slideInRight">
             <h2>Our Classes</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries,
+              Unlock your potential with our wide range of group fitness classes, led by passionate instructors. From
+              high-energy cardio to calming yoga, each session is designed to keep you motivated and progressing toward
+              your goals.
             </p>
             <div class="class-items">
               <div class="item wow bounceInUp">
@@ -426,8 +417,8 @@
                 <div class="item-text">
                   <h4>Stretching Training</h4>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Improve flexibility, reduce injury risk, and aid recovery with guided stretching classes suited for
+                    all levels. Our trainers provide hands-on support to maximize benefits.
                   </p>
                   <a href="">Get Details</a>
                 </div>
@@ -436,8 +427,8 @@
                 <div class="item-text">
                   <h4>Stretching Training</h4>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Improve flexibility, reduce injury risk, and aid recovery with guided stretching classes suited for
+                    all levels. Our trainers provide hands-on support to maximize benefits.
                   </p>
                   <a href="">Get Details</a>
                 </div>
@@ -460,11 +451,9 @@
           <div class="box text wow slideInLeft">
             <h2>Start Your Training Today</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries,
+              Don’t wait to transform your fitness and lifestyle. Whether you want to build strength, lose weight, or
+              simply feel your best, our team is ready to support and inspire you every step of the way. Join us and
+              start working toward a stronger, healthier version of yourself today.
             </p>
             <a href="" class="btn">Start Now</a>
           </div>
@@ -483,11 +472,10 @@
           <div class="box text wow slideInLeft">
             <h2>Classes Schedule</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries,
+              Our convenient schedule offers daily sessions so you can fit workouts into your busy life. Join
+              body-building classes every morning, and ask our staff for information about additional times and
+              specialty workshops. Consistency is the key to real results—find your favorite slot and commit to your
+              transformation.
             </p>
             <img src="images/schedule1.png" alt="schedule" />
           </div>
@@ -581,9 +569,8 @@
       <div class="container">
         <h2>Choose Your Package</h2>
         <p class="title-p">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+          Choose the membership package that suits your needs and budget. All packages include unlimited gym and cardio
+          access, service locker rooms, friendly staff support, and complimentary WiFi.
         </p>
         <div class="content">
           <div class="box wow bounceInUp">
@@ -593,9 +580,7 @@
                 <img src="images/price1.jpg" alt="price" />
               </div>
               <div class="text">
-                <h3>Body Building Training</h3>
-                <p>Get Free WiFi</p>
-                <p>Month to Month</p>
+                <h3>Basic Package</h3>
                 <p>No Time Restrictions</p>
                 <p>Gym and Cardio</p>
                 <p>Service Locker Rooms</p>
@@ -610,12 +595,10 @@
                 <img src="images/price2.jpg" alt="price" />
               </div>
               <div class="text">
-                <h3>Body Building Training</h3>
-                <p>Get Free WiFi</p>
-                <p>Month to Month</p>
-                <p>No Time Restrictions</p>
-                <p>Gym and Cardio</p>
-                <p>Service Locker Rooms</p>
+                <h3>Premium Package</h3>
+                <p>All Basic Benefits</p>
+                <p>Access to Group Classes</p>
+                <p>Priority Support</p>
                 <a href="" class="btn">Join Now</a>
               </div>
             </div>
@@ -627,12 +610,10 @@
                 <img src="images/price3.jpg" alt="price" />
               </div>
               <div class="text">
-                <h3>Body Building Training</h3>
-                <p>Get Free WiFi</p>
-                <p>Month to Month</p>
-                <p>No Time Restrictions</p>
-                <p>Gym and Cardio</p>
-                <p>Service Locker Rooms</p>
+                <h3>Ultimate Package</h3>
+                <p>All Premium Benefits</p>
+                <p>Personal Training Sessions</p>
+                <p>Custom Workout & Nutrition Plans</p>
                 <a href="" class="btn">Join Now</a>
               </div>
             </div>
@@ -644,55 +625,52 @@
 
 
     <!-- Reviews -->
-<section class="reviews" id="reviews">
-  <div class="container">
-    <h2 class="wow fadeInUp">What Our Members Say</h2>
-    <p class="title-p">Real experiences from people who transformed their lives with us.</p>
-    <div class="content">
-      <div class="box wow bounceInUp">
-        <div class="inner">
-          <div class="img"><img src="images/review1.jpg" alt="review1"></div>
-          <div class="text">
-            <h4>John Carter</h4>
-            <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-            <p>Joining this gym was the best decision! Trainers are motivating and sessions are great.</p>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="wow fadeInUp">What Our Members Say</h2>
+        <p class="title-p">Real experiences from people who transformed their lives with us.</p>
+        <div class="content">
+          <div class="box wow bounceInUp">
+            <div class="inner">
+              <div class="img"><img src="images/review1.jpg" alt="review1"></div>
+              <div class="text">
+                <h4>John Carter</h4>
+                <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                <p>Joining this gym was the best decision! Trainers are motivating and sessions are great.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.2s">
+            <div class="inner">
+              <div class="img"><img src="images/review2.jpg" alt="review2"></div>
+              <div class="text">
+                <h4>Emily Smith</h4>
+                <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+                <p>I love the group classes and how friendly everyone is!</p>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.4s">
+            <div class="inner">
+              <div class="img"><img src="images/review3.jpg" alt="review3"></div>
+              <div class="text">
+                <h4>Michael Lee</h4>
+                <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                <p>Modern equipment and great ambiance. I feel healthier every day!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box wow bounceInUp" data-wow-delay="0.2s">
-        <div class="inner">
-          <div class="img"><img src="images/review2.jpg" alt="review2"></div>
-          <div class="text">
-            <h4>Emily Smith</h4>
-            <div class="stars">⭐ ⭐ ⭐ ⭐</div>
-            <p>I love the group classes and how friendly everyone is!</p>
-          </div>
-        </div>
-      </div>
-      <div class="box wow bounceInUp" data-wow-delay="0.4s">
-        <div class="inner">
-          <div class="img"><img src="images/review3.jpg" alt="review3"></div>
-          <div class="text">
-            <h4>Michael Lee</h4>
-            <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-            <p>Modern equipment and great ambiance. I feel healthier every day!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Map Section -->
-<section class="map" id="map">
-  <h2 class="wow fadeInUp">Find Us in Mumbai</h2>
-  <p class="title-p">Visit our fitness club conveniently located in the heart of Mumbai.</p>
-  <iframe
-    src="https://www.google.com/maps?q=Mumbai%20Gym&output=embed"
-    allowfullscreen=""
-    loading="lazy">
-  </iframe>
-</section>
+    <!-- Map Section -->
+    <section class="map" id="map">
+      <h2 class="wow fadeInUp">Find Us in Mumbai</h2>
+      <p class="title-p">Visit our fitness club conveniently located in the heart of Mumbai.</p>
+      <iframe src="https://www.google.com/maps?q=Mumbai%20Gym&output=embed" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
 
 
 
@@ -702,38 +680,17 @@
         <div class="content">
           <div class="box form wow slideInLeft">
             <form action="https://formspree.io/f/mwpnjdlp" method="POST">
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Email"
-                required
-              />
-              <input
-                type="tel"
-                name="mobile"
-                placeholder="Enter Mobile"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Enter Message"
-                required
-              ></textarea>
+              <input type="text" name="name" placeholder="Enter Name" required />
+              <input type="email" name="email" placeholder="Enter Email" required />
+              <input type="tel" name="mobile" placeholder="Enter Mobile" required />
+              <textarea name="message" placeholder="Enter Message" required></textarea>
               <button type="submit">Send Message</button>
             </form>
           </div>
           <div class="box text wow slideInRight">
             <h2>Get Connected with Gym</h2>
             <p class="title-p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              Have questions, want to book a free trial, or need help choosing the perfect plan? Reach out to us! Our team is always ready to assist you with information about memberships, facilities, scheduling, and more.
             </p>
             <div class="info">
               <ul>
@@ -819,9 +776,7 @@
     </script>
 
     <!-- AI Chatbot Button -->
-    <button
-      id="ai-chat-btn"
-      style="
+    <button id="ai-chat-btn" style="
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -834,8 +789,7 @@
         font-size: 28px;
         cursor: pointer;
         z-index: 1000;
-      "
-    >
+      ">
       🤖
     </button>
 
@@ -849,5 +803,6 @@
         );
       });
     </script>
-  </body>
+</body>
+
 </html>
